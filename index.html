@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximun-scale =1.0, minimum-scale= 1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Artistas</title>
     <!-- Estilos -->
     <link rel="stylesheet" href="css/style.css">
@@ -10,13 +11,18 @@
 
 </head>
 <body>
+    <!-- Bnt ir arriba -->
+    <div class="irArriba">
+        <span><i class="fas fa-angle-up"></i></span>
+    </div>
+    <!-- Header -->
     <header id="header">
         <nav class="menu">
             <div class="logo-box">
                 <h1><a href="#">Artistas web</a></h1>
-                <span class="btn-menu"><i class="fas fa-bars"></i></span>
+                <span class="btn-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
             </div>
-            <div  class="list-container">
+            <div  class="list-container" id="list-container">
                 <ul class="list">
                     <li><a href="#" class="activo">Inicio</a></li>
                     <li><a href="#">Nosotros</a></li>
@@ -34,20 +40,18 @@
                 <h1>Bienvenidos Artistas Web</h1>
                 <hr>
                 <p>Agencia de diseño y Desarrollo web</p>
-                <button id="abajo">Ver Abajo</button>
+                <button id="abajo">Ver más</button>
             </div>
         </div>
     </header>
 
 <main>
 
-            <!-- ACERCA DE NOSOTROS -->
-
+    <!-- Acerca de nosotros-->
     <section class="acercaDe">
         <div class="info-acercaDe">
             <h1>Acerca de Nosotros</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt maxime iste delectus adipisci est offis.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae impedit ipsum quaerat fuga distinctio eveniet quas rem nostrum, corporis nihil alias magni quam perspiciatis fugiat omnis a voluptatibus blanditiis accusantium.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam provident deserunt et asperiores praesentium quia! Veritatis consequatur cumque possimus modi quas earum reiciendis, soluta, excepturi magni expedita vero necessitatibus voluptate.</p>
             <div class="galeria-AcercaDe">
                 <img src="img/img-9.jpg" alt="">
                 <img src="img/img-13.jpg" alt="">
@@ -72,16 +76,15 @@
                     <hr>
                 </div>
                 <div class="galeria-proyecto">
-                    <img src="img/theme-1.png" alt="">
                     <img src="img/theme-2.png" alt="">
                     <img src="img/theme-3.png" alt="">
-                    <img src="img/theme-4.png" alt="">
+                    <img src="img/theme-4.jpg" alt="">
                     <img src="img/theme-5.png" alt="">
-                    <img src="img/theme-6.png" alt="">
-                    <img src="img/theme-7.png" alt="">
+                    <img src="img/theme-6.jpg" alt="">
+                    <img src="img/theme-7.jpg" alt="">
                     <img src="img/theme-8.png" alt="">
-                    <img src="img/theme-9.png" alt="">
-                    <img src="img/theme-10.png" alt="">
+                    <img src="img/theme-9.jpg" alt="">
+                    <img src="img/theme-10.jpg" alt="">
                 </div>
 
             </div>
@@ -139,7 +142,7 @@
 
     
 </main>
-
+<!--Footer-->
 <footer class="footer">
 
     <div class="bg-footer"></div>
@@ -154,7 +157,7 @@
                     <label for="user">Nombre:</label>
                     <input type="text" id="user" name="user" placeholder="Ingresa tu nombre">
 
-                    <label for="email">Correo:</label>
+                    <label for="email">Correo Electronico:</label>
                     <input type="email" id="email" name="email" placeholder="Ingresa tu correo">
 
                     <label for="mensaje">Escribe tu mensaje</label>
@@ -179,7 +182,8 @@
 
 </footer>
 
-    <!-- Scrips -->
+<!-- Scrips -->
     <script src="https://kit.fontawesome.com/ff3d5837fc.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
