@@ -716,6 +716,58 @@ footer .container-footer .contend-formulario #formulario .mensaje-form p{
         color: #fff;
         font-weight: 400;
     }
+
+    @media only screen and (max-width:415px){
+        .img-header .welcome h1{
+            font-size: 25px;
+        }
+        .img-header .welcome hr{
+           width: 120px;
+        }
+        .img-header .welcome p{
+            font-size: 14px;
+         }
+        .img-header .welcome >button{
+            width: 90px;
+            height: 30px;
+        }
+        .NuestrosProyectos .container-proyectos .titu-proyecto{
+            border:solid 2px #fff;
+            padding: 10px;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+        }
+        .NuestrosProyectos .container-proyectos .titu-proyecto h2{
+            font-size: 25px;
+            color: #fff;
+            font-weight: 400;
+        }
+        .testimonios .testimonios-titulo{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        
+        }
+        .testimonios .testimonios-titulo h2{
+            font-size: 35px;
+            color: var(--black);
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        .NuestrosProyectos .container-proyectos .titu-proyecto{
+            border:solid 2px #fff;
+            padding: 10px;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+        }
+        .NuestrosProyectos .container-proyectos .titu-proyecto h2{
+           
+            color: #fff;
+            font-weight: 400;
+        }
+        
     
 }
 
