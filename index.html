@@ -12,23 +12,23 @@
 </head>
 <body>
     <!-- Bnt ir arriba -->
-    <div class="irArriba">
+    <div class="irArriba" href="#header">
         <span><i class="fas fa-angle-up"></i></span>
     </div>
     <!-- Header -->
     <header id="header">
         <nav class="menu">
             <div class="logo-box">
-                <h1><a href="#">Artistas web</a></h1>
+                <h1><a href="#header"  class="link">Artistas web</a></h1>
                 <span class="btn-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
             </div>
             <div  class="list-container" id="list-container">
                 <ul class="list">
-                    <li><a href="#" class="activo">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#header" class="link" class="activo">Inicio</a></li>
+                    <li><a href="#acercaDe" class="link">Nosotros</a></li>
+                    <li><a href="#NuestrosProyectos" class="link">Servicios</a></li>
+                    <li><a href="#testimonios" class="link">Blog</a></li>
+                    <li><a href="#footer" class="link">Contacto</a></li>
                     
                 </ul>
             </div>
@@ -40,7 +40,7 @@
                 <h1>Bienvenidos Artistas Web</h1>
                 <hr>
                 <p>Agencia de diseño y Desarrollo web</p>
-                <button id="abajo">Ver más</button>
+                <button href="#acercaDe" id="abajo" class="link">Ver más</button>
             </div>
         </div>
         <!-- Linea diagonal -->
@@ -50,7 +50,7 @@
 <main>
 
     <!-- Acerca de nosotros-->
-    <section class="acercaDe">
+    <section class="acercaDe" id="acercaDe">
        
         <div class="info-acercaDe">
             <h1>Acerca de Nosotros</h1>
@@ -70,7 +70,7 @@
 
     </section>
     <!-- Proyectos -->
-    <section class="NuestrosProyectos">
+    <section class="NuestrosProyectos" id="NuestrosProyectos">
         <div class="linea-diagonal-arriba"></div>
         <div class="bg-proyectos"></div>
         <div class="info-proyect">
@@ -97,7 +97,7 @@
     </section>
 
     <!-- Testimonios -->
-    <section class="testimonios">
+    <section class="testimonios" id="testimonios">
         <div class="testimonios-titulo">
             <h2>Testimonios</h2>
             <hr>
@@ -148,7 +148,7 @@
     
 </main>
 <!--Footer-->
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="linea-diagonal-arriba"></div>
     <div class="bg-footer"></div>
     <div class="info-footer">
