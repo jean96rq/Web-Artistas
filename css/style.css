@@ -216,7 +216,7 @@ body{
     margin: 50px 0;
 }
 .acercaDe .info-acercaDe .galeria-AcercaDe img{
-    width: calc(33.33% - 10px);
+    width: calc(30.33% );
     object-fit: cover;
     margin: 10px 10px;
     border-radius: 10px;
@@ -578,6 +578,10 @@ footer .container-footer .contend-formulario #formulario .mensaje-form p{
         background: none;
         color: var(--red);
     }
+    .acercaDe .info-acercaDe .galeria-AcercaDe img{
+      
+        margin: 10px 5px;
+    }
     .testimonios .box-testimonios .card-testimonio .card-img img{
         width: 200px;
         height: 200px;
@@ -624,10 +628,14 @@ footer .container-footer .contend-formulario #formulario .mensaje-form p{
     }
     .acercaDe .info-acercaDe .galeria-AcercaDe img{
         width: 100%;
+       
+    }
+    .acercaDe .info-acercaDe .galeria-AcercaDe .galeria-proyecto{
+        width: 100%;
     }
     /* Proyectos */
     .NuestrosProyectos .container-proyectos .galeria-proyecto img{
-        width: 90%;
+        width: 80%;
         margin-bottom: 30px;
     }
     
@@ -655,6 +663,7 @@ footer .container-footer .contend-formulario #formulario .mensaje-form p{
     }
     .acercaDe .info-acercaDe .galeria-AcercaDe img{
         width: 100%;
+       
     }
     /* Proyectos */
     .NuestrosProyectos .container-proyectos .galeria-proyecto img{
