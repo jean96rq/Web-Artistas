@@ -19,7 +19,7 @@ body{
 .irArriba{
     position: fixed;
     bottom: 100px;
-    right: 0;
+    right: -100%;
     width: 50px;
     height: 50px;
     border: solid 2px var(--red);
@@ -42,6 +42,25 @@ body{
 .irArriba span:hover{
     color: var(--white);
 }
+/* Lineas diagonales */
+.linea-diagonal-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.linea-diagonal-arriba{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width:10vh 100vw 0 0 ;
+    border-style: solid;
+    border-color:  #fff transparent transparent transparent;
+    z-index: 10;
+}
+
 
 /* Menu de navegacion */
 #header{
@@ -71,6 +90,12 @@ body{
 }
 .btn-menu > .fa-bars{
     display: none;
+}
+.btn-menu > .fa-bars:hover{
+    color:var(--red);
+}
+.btn-menu > .fa-times:hover{
+    color:var(--red);
 }
 .menu .list-container {
     margin-right: 20px;
@@ -505,7 +530,9 @@ footer .container-footer .contend-formulario #formulario .mensaje-form p{
 }
 
 /* Media Querys */
-@media only screen and (max-width:900px){
+
+/* 900px */
+@media only screen and (max-width:890px){
     .btn-menu > .fa-bars{
         display: block;
         position: absolute;
@@ -551,8 +578,147 @@ footer .container-footer .contend-formulario #formulario .mensaje-form p{
         background: none;
         color: var(--red);
     }
+    .testimonios .box-testimonios .card-testimonio .card-img img{
+        width: 200px;
+        height: 200px;
+    }
+    .testimonios .box-testimonios .card-testimonio{
+        width: 100%;
+    }
+    .testimonios .box-testimonios .card-testimonio h4{
+        font-size: 25px;
+    } 
+    .testimonios .box-testimonios .card-testimonio p{
+        font-size: 17px;
+        line-height: 35px;
 
+    } 
+    .footer .container-footer{
+        width: 100%;
+    }
+    .footer .info-footer .contend-formulario{
+        width: 85%;
+        padding: 20px;
+    }
+    .footer .info-footer .contend-formulario #formulario input{
+        width: 100%;
+    }
+    .footer .info-footer .contend-formulario #formulario textarea {
+        width: 100%;
+    }
 }
+
+/* 773px */
+@media only screen and (max-width:773px){
+    /* IMG Header */
+    .img-header .welcome h1{
+        font-size: 40px;
+    }
+    .img-header .welcome >button{
+        width: 130px;
+        font-size: 20px;
+    }
+    /* Acerca de */
+    .acercaDe .info-acercaDe .galeria-AcercaDe{
+        flex-direction: column;
+    }
+    .acercaDe .info-acercaDe .galeria-AcercaDe img{
+        width: 100%;
+    }
+    /* Proyectos */
+    .NuestrosProyectos .container-proyectos .galeria-proyecto img{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+}
+
+/* 590px */
+@media only screen and (max-width:590px){
+    /* IMG Header */
+    .img-header .welcome h1{
+        font-size: 30px;
+    }
+    .img-header .welcome hr{
+       width: 100px;
+    }
+    .img-header .welcome p{
+        font-size: 17px;
+     }
+    .img-header .welcome >button{
+        width: 100px;
+        font-size: 17px;
+    }
+    /* Acerca de */
+    .acercaDe .info-acercaDe .galeria-AcercaDe{
+        flex-direction: column;
+    }
+    .acercaDe .info-acercaDe .galeria-AcercaDe img{
+        width: 100%;
+    }
+    /* Proyectos */
+    .NuestrosProyectos .container-proyectos .galeria-proyecto img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .testimonios .testimonios-titulo hr{
+        width: 80%;
+        
+    }
+}
+@media only screen and (max-width:369px){
+    .img-header .welcome h1{
+        font-size: 25px;
+    }
+    .img-header .welcome hr{
+       width: 120px;
+    }
+    .img-header .welcome p{
+        font-size: 14px;
+     }
+    .img-header .welcome >button{
+        width: 90px;
+        height: 30px;
+    }
+    .NuestrosProyectos .container-proyectos .titu-proyecto{
+        border:solid 2px #fff;
+        padding: 10px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+    .NuestrosProyectos .container-proyectos .titu-proyecto h2{
+        font-size: 25px;
+        color: #fff;
+        font-weight: 400;
+    }
+    .testimonios .testimonios-titulo{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    
+    }
+    .testimonios .testimonios-titulo h2{
+        font-size: 35px;
+        color: var(--black);
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+    .NuestrosProyectos .container-proyectos .titu-proyecto{
+        border:solid 2px #fff;
+        padding: 10px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+    .NuestrosProyectos .container-proyectos .titu-proyecto h2{
+       
+        color: #fff;
+        font-weight: 400;
+    }
+    
+}
+
 
 
 
