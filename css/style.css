@@ -218,7 +218,7 @@ body{
 .acercaDe .info-acercaDe .galeria-AcercaDe img{
     width: calc(30.33% );
     object-fit: cover;
-    margin: 10px 10px;
+    margin: 10px 10px 10px 10px;
     border-radius: 10px;
     cursor: pointer;
     height: 300px;
@@ -580,7 +580,7 @@ footer .container-footer .contend-formulario #formulario .mensaje-form p{
     }
     .acercaDe .info-acercaDe .galeria-AcercaDe img{
       
-        margin: 10px 5px;
+        margin: 10px 10px 10px 0px
     }
     .testimonios .box-testimonios .card-testimonio .card-img img{
         width: 200px;
